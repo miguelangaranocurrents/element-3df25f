@@ -6,6 +6,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Com
 Please see LICENSE files in the repository root for full details.
 */
 
+/* The composer's autocomplete pops up above the composer, so the wrapper inside an event tile must not clip it. */
+.mx_EventTile .mx_EditMessageComposerWrapper {
+    overflow: visible;
+}
+
 .mx_EditMessageComposer {
     --EditMessageComposer-padding-inline: 3px;
 

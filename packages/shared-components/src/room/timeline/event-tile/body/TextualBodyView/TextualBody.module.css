@@ -41,6 +41,12 @@
     display: flex;
 }
 
+/* Let the body shrink to the tile width, so wide code blocks scroll inside their <pre>
+   instead of stretching the body (and pushing the text and the edited marker out of view). */
+.annotated > * {
+    min-width: 0;
+}
+
 .annotatedInline {
     display: inline-flex;
 }
